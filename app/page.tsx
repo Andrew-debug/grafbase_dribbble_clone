@@ -50,6 +50,11 @@ const Home = async ({ searchParams: { category, endcursor } }: Props) => {
 
   return (
     <section className="flexStart flex-col paddings mb-16">
+      <p style={{ fontWeight: 600, color: "#ea0b0b" }}>
+        Sign in via Google. Add photo of your project and fill all blanks. After
+        adding a project, please, RELOAD the page in a few seconds. Thanks
+        {" <3"}
+      </p>
       <Categories />
 
       <section className="projects-grid">
