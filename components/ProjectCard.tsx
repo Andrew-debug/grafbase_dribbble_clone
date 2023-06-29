@@ -23,6 +23,13 @@ const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
   }, []);
 
   return (
+    // <div style={{ width: 400, height: 300 }}>
+    //   <img
+    //     style={{ width: "100%", height: "100%", objectFit: "none" }}
+    //     src={image}
+    //     alt="qwe"
+    //   />
+    // </div>
     <div className="flexCenter flex-col rounded-2xl drop-shadow-card">
       <Link
         href={`/project/${id}`}
@@ -30,9 +37,9 @@ const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
       >
         <Image
           src={image}
-          width={414}
-          height={314}
-          className="w-full h-full object-cover rounded-2xl"
+          width={1585}
+          height={941}
+          className="rounded-2xl"
           alt="Project Image"
         />
         <div className="hidden group-hover:flex profile_card-title">
@@ -54,11 +61,11 @@ const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
         </Link>
 
         <div className="flexCenter gap-3">
-          <div className="flexCenter" gap-2>
+          <div className="flexCenter gap-2">
             <Image src="/heart.svg" width={13} height={12} alt="heart" />
             <p className="text-sm">{randomLikes}</p>
           </div>
-          <div className="flexCenter" gap-2>
+          <div className="flexCenter gap-2">
             <Image src="/eye.svg" width={13} height={12} alt="eye" />
             <p className="text-sm">{randomViews}</p>
           </div>
